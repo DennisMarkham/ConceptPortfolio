@@ -7,17 +7,29 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-	
-	<style>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <style>
+  
+  #content {
+    display: none;
+  }
+
   .thumbnail:hover {
     border-style: solid;
     border-width: 3px;
     border-color:#E67F18;
   }
 </style>
+
+   
+
    </head>
 
-<body>
+
+
+
+<body onload="showStuff()">
 
 
 	<nav class="navbar navbar-default">
@@ -33,7 +45,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-12 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Dennis Markham</a>
+              <a class="navbar-brand" href="index.html" id="logo">Dennis Markham</a>
             </div>
           </div>
 
@@ -67,6 +79,9 @@
 	</div>
 </section>
 </div> -->
+<div id = "content">
+
+
 <div class = "row">
 <div class = "col-md-1">
 </div>
@@ -119,10 +134,10 @@
     </div>
   </div>
 
-<div class="col-md-4">
+  <div class="col-md-4">
     <div class="thumbnail">
-      <a href="https://dennismarkham.github.io/AustinWeather/">
-        <img  style = "height: 250px" src="images/weather.png" alt="weather" style="width:100%">
+      <a href="https://dennismarkham.github.io/trainTime/">
+        <img  style = "height: 250px" src="images/weather.png" alt="Train" style="width:100%">
         <div class="caption">
           <p>Austin Weather Monitor</p>
         </div>
@@ -163,5 +178,11 @@
   <div class = "col-md-2"></div>
 </div>
 
+</div>
+<script>
+  function showStuff() {
+    $("#content").fadeIn("slow");
+}
+</script>
 </body>
 </html>
