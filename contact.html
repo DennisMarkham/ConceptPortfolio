@@ -6,9 +6,19 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <style>
+  
+  #content {
+    display: none;
+  }
+
+</style>
+
 </head>
 
-<body>
+<body onload="showStuff()">
 
 <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
@@ -39,6 +49,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+    <div id = "content">
+
 <div class = "row">
 <div class = "col-md-1"></div>
 <div class = "col-md-10">
@@ -61,7 +73,13 @@
   </div>
 </div>
 
+</div>
 
+<script>
+  function showStuff() {
+    $("#content").fadeIn("slow");
+}
+</script>
 
 </body>
 </html>
