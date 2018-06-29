@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>About Me</title>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
- 
-  
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
   
@@ -19,7 +18,7 @@
     display: none;
   }
 
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   img{
     height: 150px;
@@ -27,6 +26,7 @@
 
 
   /*Why isn't google developer tools responding to the change I made?*/
+  /*Okay, evidently I've got a lot to learn about responsive design.*/
 }
 </style>
 
@@ -35,7 +35,7 @@
 <body onload = "showStuff()">
 
 
-	<nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.html">Dennis Markham</a>
@@ -53,13 +53,7 @@
 <div class ="row">
 <div class = "col-md-1"></div>
 <div class = "col-md-10">
-<img id = "me" src = "images/me.jpg" alt="my face"></img><h1>About Me</h1><p>My name is Dennis Markham.  I am 28 years old, 
-	and a recent graduate of the University of Texas Austin Coding Bootcamp.  
-	I also graduated with Certificate in Web Development from Norwalk Community College.  
-	I am looking for a job in web development, preferably front end.  
-	I am particularly fluent in HTML, CSS, Javascript, and JQuery, but also have experience in Java, Node.js, AJAX, SQL, 
-	ES5, ES6, Mongo, Mongoose, and React, as well as substantial experience with softwares/websites such as Sublime, 
-	Netbeans, GitBash, GitHub, and SQL Workbench.</p>	
+<img id = "me" src = "images/me.jpg" alt="my face"></img><h1>About Me</h1><p>Good <span id = "time">afternoon</span> (yes, I know what time it is), sir or madam.  My name is Dennis Markham.  I am 28 years old, and a recent graduate of the University of Texas Austin Coding Bootcamp.  I also graduated with Certificate in Web Development from Norwalk Community College.  I am looking for a job in web development, preferably front end.  I am particularly fluent in HTML, CSS, Javascript, and JQuery, but also have experience in Java, Node.js, AJAX, SQL, ES5, ES6, Mongo, Mongoose, and React, as well as substantial experience with softwares/website such as Sublime, Netbeans, GitBash, GitHub, and SQL Workbench</p>	
 </div>
 <div class = "col-md-1"></div>
 </div>
@@ -70,6 +64,23 @@
   function showStuff() {
     $("#content").fadeIn("slow");
 }
+
+var hours = parseFloat(moment().startOf('day').fromNow());
+console.log(hours);
+
+if (hours >= 17 || hours < 5)
+{
+ $("#time").text("evening");
+}
+else if (hours < 12)
+{
+  $("#time").text("morning");
+}
+else
+{
+  $("#time").text("afternoon");
+}
+
 </script>
 
 </body>
