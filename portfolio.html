@@ -5,13 +5,10 @@
   <meta charset="UTF-8">
   <title>Portfolio</title>
 
-	   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-
-	
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <style>
   
   #content {
@@ -25,7 +22,7 @@
   }
 </style>
 
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    </head>
 
@@ -35,7 +32,7 @@
 <body onload="showStuff()">
 
 
-		<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.html">Dennis Markham</a>
@@ -82,7 +79,7 @@
 <div class="row">
 	<div class = "col-md-2"></div>
  
-  <div class="col-md-4">
+  <div class="col-md-4" onmouseover ="crystal()">
     <div class="thumbnail">
       <a href="https://dennismarkham.github.io/week-4-game/">
         <img style = "height: 250px" src="images/crystal.png" alt="Crystal" style="width:100%">
@@ -93,7 +90,7 @@
     </div>
   </div>
 
-<div class="col-md-4">
+<div class="col-md-4" onmouseover = "train()">
     <div class="thumbnail">
       <a href="https://dennismarkham.github.io/trainTime/">
         <img  style = "height: 250px" src="images/train2.png" alt="Train" style="width:100%">
@@ -110,7 +107,7 @@
 <div class="row">
   <div class = "col-md-2"></div>
  
-  <div class="col-md-4">
+  <div class="col-md-4" onmouseover="boom()">
     <div class="thumbnail">
       <a href="https://dennismarkham.github.io/BombDefuser/">
         <img style = "height: 250px" src="images/bomb.png" alt="Bomb" style="width:100%">
@@ -121,10 +118,10 @@
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-4" onmouseover="thunder()">
     <div class="thumbnail">
-      <a href="https://dennismarkham.github.io/AustinWeatherV2/">
-        <img  style = "height: 250px" src="images/weather.png" alt="weather" style="width:100%">
+      <a href="https://dennismarkham.github.io/trainTime/">
+        <img  style = "height: 250px" src="images/weather.png" alt="Train" style="width:100%">
         <div class="caption">
           <p>Austin Weather Monitor</p>
         </div>
@@ -135,12 +132,12 @@
 
   <div class = "col-md-2"></div>
 </div>
-	
-	<div class="row">
+
+<div class="row">
   <div class = "col-md-2"></div>
  
-  <div class="col-md-4">
-    <div class="thumbnail">
+  <div class="col-md-4"  onmouseover="shutter()">
+    <div class="thumbnail" >
       <a href="https://rphotogallery.herokuapp.com/">
         <img style = "height: 250px" src="images/camera.png" alt="camera" style="width:100%">
         <div class="caption">
@@ -171,7 +168,7 @@
 	<div class = "col-md-2"></div>
   
 
-   <div class="col-md-4">
+   <div class="col-md-4" onmouseover = "typing()">
     <div class="thumbnail">
       <a href="https://cacheualcorner.herokuapp.com/">
         <img src="images/CC.png" alt="Cache-ual Corner (chat room)" style="width:100%">
@@ -189,9 +186,66 @@
 
 </div>
 <script>
+//QUESTIONS:
+//-Train sound and magic sound
+
+
+var trainSound = new Audio("train.wav");
+  trainSound.volume = 0.1;
+
+  var crystalSound = new Audio("crystal.wav");
+  crystalSound.volume = 0.25;
+
+   var shutterSound = new Audio("shutter.wav");
+   shutterSound.volume = 0.2;
+
+  var thunderSound = new Audio("thunder.wav");
+  thunderSound.volume = 0.15;
+
+  var boomSound = new Audio("boom.mp3");
+  boomSound.volume = 0.15;
+
+  var typingSound = new Audio("typing.wav");
+  typingSound.volume = 0.15;
+
   function showStuff() {
     $("#content").fadeIn("slow");
 }
+
+
+ function train(){
+  trainSound.play();
+
+  console.log("Playing train");
+ }
+
+ function crystal(){
+  crystalSound.play();
+
+  console.log("Playing crystal");
+ }
+
+ function shutter(){
+ shutterSound.play();
+ console.log("Playing shutter");
+ }
+
+ function thunder(){
+  thunderSound.play();
+  console.log("Playing thunder");
+ }
+
+ function boom(){
+  boomSound.play();
+  console.log("Playing boom");
+ }
+
+function typing(){
+  typingSound.play();
+  console.log("playing typing");
+}
+
+
 </script>
 </body>
 </html>
