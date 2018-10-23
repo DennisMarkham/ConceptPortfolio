@@ -8,7 +8,39 @@ background-color: rgb(0, 158, 158);
 }
 
 /*h1 {background-color: grey;}*/
+#crystalCollector, #crystalCollector * 
+{
+	cursor: url('images/cursor2.cur'), auto !important;
+}
 
+#trainTimer, #trainTimer * 
+{
+	cursor: url('images/pocket.watch.cur'), auto !important;
+}
+
+#bombDefuser, #bombDefuser * 
+{
+	cursor: url('images/Bomb.cur'), auto !important;
+}
+
+#weatherMonitor, #weatherMonitor * 
+{
+	cursor: url('images/weather.ico'), auto !important;
+}
+
+/* 
+Need reactGallery cursor, and new chatroom cursor
+*/
+
+#reactGallery, #reactGallery * 
+{
+cursor: url('images/cam-cursor.png'), auto !important;
+}
+
+#chatroom, #chatroom *
+{
+cursor: url('images/chat.ico'), auto !important;
+}
 
 img{
 	/*width: 300px;*/
