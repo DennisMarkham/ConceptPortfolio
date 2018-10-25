@@ -28,9 +28,7 @@ background-color: rgb(0, 158, 158);
 	cursor: url('images/weather.ico'), auto !important;
 }
 
-/* 
-Need reactGallery cursor, and new chatroom cursor
-*/
+
 
 #reactGallery, #reactGallery * 
 {
@@ -40,6 +38,11 @@ cursor: url('images/cam-cursor.png'), auto !important;
 #chatroom, #chatroom *
 {
 cursor: url('images/chat.ico'), auto !important;
+}
+
+#whiteboard, #whiteboard *
+{
+cursor: url('images/eraser.png'), auto !important;
 }
 
 img{
