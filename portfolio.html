@@ -78,7 +78,7 @@
     <div class="thumbnail" id = "crystalCollector">
       <a href="https://dennismarkham.github.io/week-4-game/">
         <img style = "height: 250px" src="images/crystal.png" alt="Crystal" style="width:100%"
-        data-toggle="tool-tip" title="HTML, CSS, Javascript, JQuery, Persistent Storage">
+        data-toggle="tool-tip" title="HTML, CSS, Javascript, JQuery">
         <div class="caption">
           <p>Crystal Collector</p>
         </div>
@@ -149,7 +149,7 @@
       <a href="https://dennismarkham.github.io/Roulette/">
         <img  style = "height: 250px" src="images/wheel.png" alt="roulette wheel" style="width:100%" data-toggle="tool-tip" title = "HTML, CSS, Javascript, Javascript Animation, JQuery, Bootstrap">
         <div class="caption">
-          <p>Javascript Roulette Wheel</p>
+          <p>Javascript Roulette Wheel <span style = "color:red; font-style:bold;">(WIP)</span></p>
         </div>
       </a>
     </div>
@@ -219,6 +219,19 @@
 
 </div>
 <script>
+
+//on click of .thumbnail a local storage variable with the name of this.id is set to true
+//first need to set the variables in local storage and make them false...right?
+
+
+$(".thumbnail").click(function()
+{
+
+  console.log("function firing: setting " + this.id + " to true");
+
+  localStorage.setItem(this.id, "visited");
+//set visited to true
+})
 //QUESTIONS:
 //-Train sound and magic sound
 var trainSound = new Audio("train.wav");
@@ -238,7 +251,48 @@ var trainSound = new Audio("train.wav");
   
   function showStuff() {
     $("#content").fadeIn("slow");
+
+    //visit tracker:
+
+    var visitedArray = [];
+    var keysArray =[];
+
+  
+
+//okay, okay, the visitedArray is only passed "visited" or "null"
+//so I think what we need is parrelel array of keys.  
+//alright, let's start simple, we can dry this up later.  AND I THINK
+//TO DO THAT WE WILL HAVE TO USE THE KEYS ARRAY TO BUILD THE VISITED ARRAY!
+//YES!
+
+keysArray.push("crystalCollector");
+keysArray.push("trainTimer");
+keysArray.push("bomberDefuser");
+keysArray.push("weatherMonitor");
+keysArray.push("reactGallery");
+keysArray.push("roulette");
+keysArray.push("chatroom");
+
+for (i = 0; i < keysArray.length; i++)
+{
+visitedArray.push(localStorage.getItem(keysArray[i]));
 }
+
+//create a for loop to loop through array, maybe it logs caption text into the 
+//console?
+for (i = 0; i < visitedArray.length; i++) { 
+   if (visitedArray[i] == "visited")
+     {
+       console.log(keysArray[i] + " visited");
+       $("#" + keysArray[i]).css("opacity", "0.5");
+    }
+
+}
+ //okay, the above just logs visited, not the same of the variable in local storage   
+ //EFF YEAH!  YOU DID IT!!
+}
+
+
  function train(){
   trainSound.play();
   console.log("Playing train");
