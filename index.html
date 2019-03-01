@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang ="en-us">
 <head>
   <meta charset="UTF-8">
   <title>About Me</title>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -41,7 +41,7 @@
 
 </head>
 
-<body onload = "showStuff()">
+<body onload = "showStuff(), startSlideshow()">
 
 
 <nav class="navbar navbar-default">
@@ -62,16 +62,16 @@
 <div class ="row">
 <div class = "col-md-1"></div>
 <div class = "col-md-10">
-<img id = "me" src = "images/me.jpg" alt="my face"></img><h1>About Me</h1><p>Good <span id = "time">afternoon</span> 
+<img id = "me" src = "images/me1.jpg" alt="my face"></img><h1>About Me</h1><p>Good <span id = "time">afternoon</span> 
   (yes, I know what time it is), sir or madam.  My name is Dennis Markham.  I am 28 years old, and a recent graduate of the University
   of Texas Austin Coding Bootcamp.  I also graduated with Certificate in Web Development from Norwalk Community College.  
   I recieved a Bachelor of Science Degree in Psychology from the <a href = "https://uconn.edu/">University of Connecticut</a>.  I am currently
   an instructor for <a href = "https://www.codingwithkids.com/#!/"> Coding With Kids</a>.
   I am looking for a job in web development, preferably front end.  I am particularly fluent in HTML, CSS, Javascript, and 
   JQuery, but also have experience in AngularJS, Node.js, Java, AJAX, SQL, PHP, ES5, ES6, Mongo, Mongoose, and React, as well as substantial 
-  experience with softwares/websites such as Sublime, Netbeans, GitBash, GitHub, and SQL Workbench.</p>	
+  experience with softwares/websites such as Sublime, Netbeans, GitBash, GitHub, and SQL Workbench.</p> 
   <p>Signed,</p>
-<span style = "font-family: French Script MT; font-size: 3em;">Dennis E. Markham</span>	
+<span style = "font-family: French Script MT; font-size: 3em;">Dennis E. Markham</span> 
 </div>
 <div class = "col-md-1"></div>
 </div>
@@ -79,14 +79,94 @@
 </div>
 
 <script>
-  function showStuff() {
-    $("#content").fadeIn("slow");
+
+  var images = ["images/me1.png", "images/me2.png", "images/me3.png"];
+
+var showImage;
+
+var count = 0;
+
+ function startSlideshow() {
+
+  // TODO: Use showImage to hold the setInterval to run nextImage.
+  showImage = setInterval(nextImage, 3000);
+
 }
 
-var hours = parseFloat(moment().startOf('day').fromNow());
-console.log(hours);
+function nextImage() {
+  //  TODO: Increment the count by 1.
+  count++;
 
-if (hours >= 17 || hours < 5)
+  // TODO: Show the loading gif in the "image-holder" div.
+  $("#me").attr("src", "images/me" + count + ".jpg");
+
+  // TODO: Use a setTimeout to run displayImage after 1 second.
+  //setTimeout(displayImage, 1000);
+
+  // TODO: If the count is the same as the length of the image array, reset the count to 0.
+  if (count === images.length) {
+    count = 0;
+  }
+}
+
+
+   var config = {
+    apiKey: "AIzaSyAOmfkq_B5LQevl3vi1f0neviWimLBcuek",
+    authDomain: "portfolio-hit-counter-30647.firebaseapp.com",
+    databaseURL: "https://portfolio-hit-counter-30647.firebaseio.com",
+    projectId: "portfolio-hit-counter-30647",
+    storageBucket: "portfolio-hit-counter-30647.appspot.com",
+    messagingSenderId: "763848734644"
+  };
+  firebase.initializeApp(config);
+
+
+ 
+    var database = firebase.database();
+
+
+
+
+    database.ref().on("value", function(snapshot) {
+  console.log("Logging snapshot.val " + snapshot.val());
+  console.log("Logging hits " + snapshot.val().hits);
+
+  var hitCounter = snapshot.val().hits;
+  console.log("hitCounter is " + hitCounter);
+
+
+  addHits();
+
+}, function(errorObject) {
+
+  console.log("The read failed: " + errorObject.code);
+});
+
+//so I can get it to display the value in the database, but not to increase.  WTF
+  function showStuff() {
+    $("#content").fadeIn("slow");
+  }
+
+  function addHits()
+{
+      hitCounter++;
+      console.log("hitCounter in showstuff() function is = " + hitCounter);
+      //this console log above doesn't even fire.  WTF!?
+      //Ask on stack overflow some other time
+
+      database.ref().set({
+        hits: hitCounter
+      });
+}
+
+
+
+var hours = parseFloat(moment().startOf('day').fromNow());
+// var hours = moment('HH');
+console.log(hours);
+console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+
+if (hours >= 17 || hours < 5 || hours == NaN)
 {
  $("#time").text("evening");
 }
