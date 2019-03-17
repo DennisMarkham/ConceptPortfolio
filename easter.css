@@ -1,0 +1,98 @@
+body {
+background-color: rgb(102, 255, 255);
+}
+
+.col-md-10 {
+	background-color: pink;
+	border-radius: 25px;
+}
+
+/*h1 {background-color: grey;}*/
+#crystalCollector, #crystalCollector * 
+{
+	cursor: url('images/cursor2.cur'), auto !important;
+}
+
+#trainTimer, #trainTimer * 
+{
+	cursor: url('images/pocket.watch.cur'), auto !important;
+}
+
+#bombDefuser, #bombDefuser * 
+{
+	cursor: url('images/Bomb.cur'), auto !important;
+}
+
+#weatherMonitor, #weatherMonitor * 
+{
+	cursor: url('images/weather.ico'), auto !important;
+}
+
+
+
+#reactGallery, #reactGallery * 
+{
+cursor: url('images/cam-cursor.png'), auto !important;
+}
+
+#chatroom, #chatroom *
+{
+cursor: url('images/chat.ico'), auto !important;
+}
+
+#whiteboard, #whiteboard *
+{
+cursor: url('images/eraser.png'), auto !important;
+}
+
+img{
+	/*width: 300px;*/
+	height: 300px;
+	margin: 20px;
+	border-radius: 25px;
+	
+}
+
+p { margin-top: 20px; }
+
+#me {
+	float: left;
+}
+
+
+.navbar 
+{
+background-color: rgb(255, 255, 102);
+border-color: pink;
+border-radius: 10px;
+}
+
+.active{
+	background-color: pink;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: pink;
+}
+/*
+.navbar-default .navbar-nav > .active{
+    color: #000;
+    background: #d65c14;
+}*/
+
+.caption
+{
+	position: relative;
+	background-color: rgb(0, 158, 158);
+	
+	border-radius: 25px;
+}
+
+.thumbnail {
+
+background-color: rgb(200, 200, 200);
+border-color: grey;
+border-radius: 25px;
+}
