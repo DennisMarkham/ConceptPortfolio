@@ -10,6 +10,8 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
+ <script src = "portfolio.js"></script>
+
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -78,124 +80,6 @@
 </div>
 
 </div>
-
-<script>
-
-function holiday()
-{
-  $(".holiday").text("Turn off holiday mode?");
-  $("link[href='style.css']").attr('href','easter.css');
-  $(".holiday").attr('onclick', 'unholiday();')
-}
-
-function unholiday()
-{
-  $(".holiday").text("Turn on holiday mode?");
-  $("link[type='text/css']").attr('href','style.css');
-  $(".holiday").attr('onclick', 'holiday();')
-}
-//not clear why doesn't even change text
-
-  var images = ["images/me1.png", "images/me2.png", "images/me3.png"];
-
-var showImage;
-
-var count = 0;
-
- function startSlideshow() {
-
-  // TODO: Use showImage to hold the setInterval to run nextImage.
-  showImage = setInterval(nextImage, 3000);
-
-}
-
-function nextImage() {
-  //  TODO: Increment the count by 1.
-  count++;
-
-  // TODO: Show the loading gif in the "image-holder" div.
-  $("#me").attr("src", "images/me" + count + ".jpg");
-
-  // TODO: Use a setTimeout to run displayImage after 1 second.
-  //setTimeout(displayImage, 1000);
-
-  // TODO: If the count is the same as the length of the image array, reset the count to 0.
-  if (count === images.length) {
-    count = 0;
-  }
-}
-
-
-   var config = {
-    apiKey: "AIzaSyAOmfkq_B5LQevl3vi1f0neviWimLBcuek",
-    authDomain: "portfolio-hit-counter-30647.firebaseapp.com",
-    databaseURL: "https://portfolio-hit-counter-30647.firebaseio.com",
-    projectId: "portfolio-hit-counter-30647",
-    storageBucket: "portfolio-hit-counter-30647.appspot.com",
-    messagingSenderId: "763848734644"
-  };
-  firebase.initializeApp(config);
-
-
- 
-    var database = firebase.database();
-
-
-
-
-    database.ref().on("value", function(snapshot) {
-  console.log("Logging snapshot.val " + snapshot.val());
-  console.log("Logging hits " + snapshot.val().hits);
-
-  var hitCounter = snapshot.val().hits;
-  console.log("hitCounter is " + hitCounter);
-
-
-  addHits();
-
-}, function(errorObject) {
-
-  console.log("The read failed: " + errorObject.code);
-});
-
-//so I can get it to display the value in the database, but not to increase.  WTF
-  function showStuff() {
-    $("#content").fadeIn("slow");
-  }
-
-  function addHits()
-{
-      hitCounter++;
-      console.log("hitCounter in showstuff() function is = " + hitCounter);
-      //this console log above doesn't even fire.  WTF!?
-      //Ask on stack overflow some other time
-
-      database.ref().set({
-        hits: hitCounter
-      });
-}
-
-
-
-var hours = parseFloat(moment().startOf('day').fromNow());
-// var hours = moment('HH');
-console.log(hours);
-console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
-
-if (hours >= 17 || hours < 5 || hours == NaN)
-{
- $("#time").text("evening");
-}
-else if (hours < 12)
-{
-  $("#time").text("morning");
-}
-else
-{
-  $("#time").text("afternoon");
-}
-
-</script>
 
 </body>
 </html>
