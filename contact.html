@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  
+  <script src="portfolio.js"></script>
 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
@@ -72,25 +73,7 @@
 
 </div>
 
-<script>
-  function showStuff() {
-    $("#content").fadeIn("slow");
-}
 
-function holiday()
-{
-  $(".holiday").text("Turn off holiday mode?");
-  $("link[href='style.css']").attr('href','easter.css');
-  $(".holiday").attr('onclick', 'unholiday();')
-}
-
-function unholiday()
-{
-  $(".holiday").text("Turn on holiday mode?");
-  $("link[type='text/css']").attr('href','style.css');
-  $(".holiday").attr('onclick', 'holiday();')
-}
-</script>
 
 </body>
 </html>
