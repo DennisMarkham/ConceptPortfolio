@@ -4,12 +4,22 @@ function showStuff() {
     $("#content").fadeIn("slow");
 }
 
+function holidayCheck()
+{
+if (localStorage.getItem("holiday") == "holiday")
+{
+$(".holiday").text("Turn off holiday mode?");
+  $("link[href='style.css']").attr('href','easter.css');
+  $(".holiday").attr('onclick', 'unholiday();');
+}
+}
 
 function holiday()
 {
   $(".holiday").text("Turn off holiday mode?");
   $("link[href='style.css']").attr('href','easter.css');
   $(".holiday").attr('onclick', 'unholiday();')
+   localStorage.setItem("holiday", "holiday");
 }
 
 function unholiday()
@@ -17,6 +27,7 @@ function unholiday()
   $(".holiday").text("Turn on holiday mode?");
   $("link[type='text/css']").attr('href','style.css');
   $(".holiday").attr('onclick', 'holiday();')
+  localStorage.setItem("holiday", "unholiday");
 }
 //*********
 //*****HOME STUFF******
