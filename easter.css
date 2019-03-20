@@ -1,3 +1,9 @@
+#bunny{
+	width: 10%;
+	height: 10%;
+	position: absolute;
+}
+
 body {
 background-color: rgb(102, 255, 255);
 }
