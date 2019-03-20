@@ -43,7 +43,7 @@
 
 </head>
 
-<body onload = "showStuff(), startSlideshow(), holidayCheck(), bunnyHop()">
+<body onload = "showStuff(), startSlideshow(), dateNTime(), holidayCheck(), bunnyHop()">
 
 
 <nav class="navbar navbar-default">
@@ -82,7 +82,8 @@
 </div>
 <img id = "bunny" src = "images/bunny.png">
 
-<script>var images = ["images/me1.png", "images/me2.png", "images/me3.png"];
+<script>
+var images = ["images/me1.png", "images/me2.png", "images/me3.png"];
 
 var showImage;
 
@@ -159,9 +160,10 @@ function nextImage() {
 }
 
 
-console.log("age test:" + moment("20111031", "YYYYMMDD").fromNow());
-
-$("#age").text("lklj");
+console.log("age test:" + moment("19900312", "YYYYMMDD").fromNow());
+function dateNTime()
+{
+$("#age").text(parseFloat(moment("19900312", "YYYYMMDD").fromNow()));
 
 var hours = parseFloat(moment().startOf('day').fromNow());
 // var hours = moment('HH');
@@ -179,6 +181,7 @@ else if (hours < 12)
 else
 {
   $("#time").text("afternoon");
+}
 }
 //*****************</script>
 </body>
