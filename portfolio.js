@@ -20,7 +20,6 @@ function holiday()
   $("link[href='style.css']").attr('href','easter.css');
   $(".holiday").attr('onclick', 'unholiday();')
    localStorage.setItem("holiday", "holiday");
-   bunnyHop();
 }
 
 function unholiday()
