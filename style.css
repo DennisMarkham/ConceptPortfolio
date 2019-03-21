@@ -1,5 +1,9 @@
 #bunny{
 	display: none;
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	bottom: 0px;
 	
 }
 
