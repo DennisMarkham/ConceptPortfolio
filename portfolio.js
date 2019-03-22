@@ -74,15 +74,11 @@ var downPos = 100;
 
 function moveDown()
 {
-  if (downPos == 0)
+  if (downPos != 0)
   {
     clearInterval(id3)
   }
-  else
-  {
-  downPos--;
-  elem.style.bottom = downPos + 'px';
-}
+  
 }
 }
 
