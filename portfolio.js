@@ -76,7 +76,8 @@ function moveDown()
 {
   if (downPos != 0)
   {
-    clearInterval(id3)
+    downPos--;
+  elem.style.bottom = downPos + 'px';
   }
   
 }
