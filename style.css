@@ -1,3 +1,9 @@
+.thumbnail:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-color:#E67F18;
+  }
+
 #bunny{
 	display: none;
 	width: 10%;
