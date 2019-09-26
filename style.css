@@ -60,6 +60,11 @@ cursor: url('images/chat.ico'), auto !important;
 cursor: url('images/eraser.png'), auto !important;
 }
 
+#madLibs, #madLibs * 
+{
+	cursor: url('images/pencil.cur'), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
