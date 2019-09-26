@@ -65,6 +65,11 @@ cursor: url('images/eraser.png'), auto !important;
 	cursor: url('images/pencil.cur'), auto !important;
 }
 
+#roulette, #roulette * 
+{
+	cursor: url('images/dollar.cur'), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
