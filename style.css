@@ -72,7 +72,7 @@ cursor: url('images/eraser.png'), auto !important;
 
 #aniGallery, #aniGallery *
 {
-	cursor: url('images/vidcam.ico), auto !important;
+	cursor: url('images/vidcam.ico'), auto !important;
 }
 img{
 	/*width: 300px;*/
