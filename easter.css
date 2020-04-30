@@ -22,6 +22,10 @@
 
 body {
 background-color: rgb(102, 255, 255);
+background-image: url("images/crackedEgg.png"), url(images/crackedEgg.png);
+background-position: bottom right, bottom left;
+background-repeat: no-repeat;
+background-size: 50px 50px;	
 }
 
 .col-md-10 {
