@@ -6,28 +6,23 @@ function showStuff() {
 
 function holidayCheck()
 {
-if (localStorage.getItem("holiday") == "holiday")
+if (localStorage.getItem("holiday") == "easter")
 {
-$(".holiday").text("Turn off holiday mode?");
   $("link[href='style.css']").attr('href','easter.css');
-  $(".holiday").attr('onclick', 'unholiday();');
+}
+else
+{
+  $("link[href='easter.css']").attr('href','style.css')
 }
 }
 
-function holiday()
+function setHoliday()
 {
-  $(".holiday").text("Turn off holiday mode?");
-  $("link[href='style.css']").attr('href','easter.css');
-  $(".holiday").attr('onclick', 'unholiday();')
-   localStorage.setItem("holiday", "holiday");
-}
+  console.log(event.target.value);
 
-function unholiday()
-{
-  $(".holiday").text("Turn on holiday mode?");
-  $("link[type='text/css']").attr('href','style.css');
-  $(".holiday").attr('onclick', 'holiday();')
-  localStorage.setItem("holiday", "unholiday");
+  localStorage.setItem("holiday", event.target.value);
+
+  holidayCheck();
 }
 
 function bunnyHop()
