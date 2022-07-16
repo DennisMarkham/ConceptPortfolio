@@ -60,7 +60,10 @@
       <li><a href="downloads.html">Downloads</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a class = "holiday" href = "#" style="float:right;" onclick = "holiday();">Turn on holiday mode?</a>
+      <span class = "holiday" style = "float:right;">Holiday mode? <select onChange = "setHoliday(event);">
+        <option value = "none">None</option>
+        <option value = "easter">Easter</option></select> 
+    </span>
   </div>
 </nav>
 
