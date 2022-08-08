@@ -1,3 +1,7 @@
+.content {
+    display: none;
+  }
+
 .thumbnail:hover {
     border-style: solid;
     border-width: 3px;
