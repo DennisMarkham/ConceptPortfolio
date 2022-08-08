@@ -1,8 +1,9 @@
 
 //*******UNIVERSAL*********
-function showStuff() {
-    $(".content").fadeIn("slow");
-}
+// function showStuff() {
+//     $(".content").fadeIn("slow");
+// }
+//down for maintainence
 
 function holidayCheck()
 {
