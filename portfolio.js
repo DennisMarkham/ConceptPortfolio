@@ -1,7 +1,7 @@
 
 //*******UNIVERSAL*********
 function showStuff() {
-    $("#content").fadeIn("slow");
+    $(".content").fadeIn("slow");
 }
 
 function holidayCheck()
