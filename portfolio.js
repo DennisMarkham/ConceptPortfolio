@@ -249,7 +249,7 @@ else
 //   beepSound.volume = 0.2;
   
 //   function showStuff() {
-//     $("#content").fadeIn("slow");
+//     $(".content").fadeIn("slow");
 
 //     //visit tracker:
 
