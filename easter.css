@@ -1,4 +1,8 @@
- @media only screen and (max-width: 780px)
+.content {
+    display: none;
+  }
+
+@media only screen and (max-width: 780px)
 {
 	.col-sm-4
 	{
