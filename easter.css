@@ -3,6 +3,12 @@
   }
  */
 
+input, textarea
+{
+border-radius: 10px;
+border-width: 0px;
+}
+
 @media only screen and (max-width: 780px)
 {
 	.col-sm-4
