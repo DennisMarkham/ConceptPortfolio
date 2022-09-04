@@ -3,19 +3,29 @@
 function showStuff() {
     $(".content").fadeIn("slow");
 }
-//does this actually work? I don't think so.
+//this does not have any effect until I re-enable the "display none" on my css.  But
+//this is faulty for some reason
 
 function holidayCheck()
 {
 if (localStorage.getItem("holiday") == "easter")
 {
-  $("link[href='style.css']").attr('href','easter.css');
+  $("link[href='default.css']").attr('href','easter.css');
 }
 else
 {
-  $("link[href='easter.css']").attr('href','style.css')
+  $("link[href='easter.css']").attr('href','default.css')
 }
 }
+
+//this streamlined version of holidayCheck breaks the program for some reason
+// function holidayCheck()
+// {
+// var skin = localStorage.getItem("holiday");
+
+// $("link[rel='stylesheet']").attr('href', skin + '.css');
+// }
+
 
 function setHoliday()
 {

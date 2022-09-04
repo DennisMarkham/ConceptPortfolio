@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <title>Downloads</title>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script src="portfolio.js"></script>
@@ -37,8 +38,8 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
 	  <!-- Holiday select disabled until I can figure out why it doesn't work on downloads -->
-    <span class = "holiday" style = "float:right;">Holiday mode? <select onChange = "setHoliday(event);" disabled>
-        <option value = "none">None</option>
+    <span class = "holiday" style = "float:right;">Holiday mode? <select onChange = "setHoliday(event);">
+        <option value = "default">None</option>
         <option value = "easter">Easter</option></select> 
     </span>
   </div>
