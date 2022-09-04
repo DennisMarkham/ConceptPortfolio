@@ -11,10 +11,12 @@ function holidayCheck()
 if (localStorage.getItem("holiday") == "easter")
 {
   $("link[href='default.css']").attr('href','easter.css');
+  $('select option[value="easter"]').attr("selected",true);
 }
 else
 {
-  $("link[href='easter.css']").attr('href','default.css')
+  $("link[href='easter.css']").attr('href','default.css');
+    $('select option[value="default"]').attr("selected",true);
 }
 }
 
