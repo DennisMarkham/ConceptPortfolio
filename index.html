@@ -96,10 +96,10 @@ var images = ["images/me1.png", "images/me2.png", "images/me3.png"];
 
 var showImage;
 
-var count = 0;
+var count = 1;
 
  function startSlideshow() {
-
+console.log("start slideshow firing")
   // TODO: Use showImage to hold the setInterval to run nextImage.
   showImage = setInterval(nextImage, 3000);
 
@@ -122,52 +122,7 @@ function nextImage() {
 }
 
 
-   var config = {
-    apiKey: "AIzaSyAOmfkq_B5LQevl3vi1f0neviWimLBcuek",
-    authDomain: "portfolio-hit-counter-30647.firebaseapp.com",
-    databaseURL: "https://portfolio-hit-counter-30647.firebaseio.com",
-    projectId: "portfolio-hit-counter-30647",
-    storageBucket: "portfolio-hit-counter-30647.appspot.com",
-    messagingSenderId: "763848734644"
-  };
-  firebase.initializeApp(config);
-
-
- 
-    var database = firebase.database();
-
-
-
-
-    database.ref().on("value", function(snapshot) {
-  console.log("Logging snapshot.val " + snapshot.val());
-  console.log("Logging hits " + snapshot.val().hits);
-
-  var hitCounter = snapshot.val().hits;
-  console.log("hitCounter is " + hitCounter);
-
-
-  addHits();
-
-}, function(errorObject) {
-
-  console.log("The read failed: " + errorObject.code);
-});
-
-
-
-  function addHits()
-{
-      hitCounter++;
-      console.log("hitCounter in showstuff() function is = " + hitCounter);
-      //this console log above doesn't even fire.  WTF!?
-      //Ask on stack overflow some other time
-
-      database.ref().set({
-        hits: hitCounter
-      });
-}
-
+   
 
 console.log("age test:" + moment("19900312", "YYYYMMDD").fromNow());
 function dateNTime()
