@@ -5,6 +5,14 @@
   This is removed until I can figure out why it works for index and contact but now
   downloads and portfolio*/
 
+.col-md-8
+{
+	background-color: rgb(200, 200, 200);
+	border-radius: 25px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px;
+}
 
 input, textarea
 {
