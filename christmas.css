@@ -43,7 +43,7 @@ margin-bottom: 5px;
 }
 
 body {
-background-color: red;
+background-color: hsl(0, 65%, 50%);
 }
 
 a
@@ -53,12 +53,12 @@ a
 
 a:hover
 {
-	color: red !important;
+	color: hsl(0, 65%, 50%) !important;
 }
 
 a:visited
 {
-	color: red !important;
+	color: hsl(0, 65%, 50%) !important;
 }
 
 .col-md-10 {
@@ -188,7 +188,7 @@ box-shadow: 5px 5px 5px black;
 	color: white;
 	
 	border-radius: 25px;
-	background-color:red;
+	background-color:hsl(0, 65%, 50%);
 }
 
 .thumbnail p
