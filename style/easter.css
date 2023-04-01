@@ -1,0 +1,179 @@
+/* .content {
+    display: none;
+  }
+ */
+.col-md-8
+{
+	background-color:pink;
+	border-radius: 25px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px;
+}
+
+input, textarea
+{
+border-radius: 10px;
+border-width: 0px;
+bottom-margin: 5px;
+}
+
+@media only screen and (max-width: 780px)
+{
+	.col-sm-4
+	{
+		margin: 10px;
+	}
+
+	.caption
+	{
+		margin: 20px;
+	}
+
+	.caption p
+	{
+		text-align: center;
+		font-size: 200%;
+	}
+}
+
+ @media only screen and (max-width: 900px) {
+  .col-md-10 {
+    margin: 50px;
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    margin: 40px;
+    
+  }
+}
+
+ .thumbnail:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgb(255, 255, 102);
+  }
+
+#bunny{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: 0px;
+}
+
+ @media only screen and (max-width: 800px) {
+
+#bunny
+{
+	display:none;
+}
+
+ }
+
+body {
+background-color: rgb(102, 255, 255);
+background-image: url("images/crackedEgg.png"), url(images/crackedEgg.png);
+background-position: bottom right, bottom left;
+background-repeat: no-repeat;
+background-size: 50px 50px;	
+}
+
+
+
+.col-md-10 {
+	background-color: pink;
+	border-radius: 25px;
+}
+
+/*h1 {background-color: grey;}*/
+#crystalCollector, #crystalCollector * 
+{
+	cursor: url('images/cursor2.cur'), auto !important;
+}
+
+#trainTimer, #trainTimer * 
+{
+	cursor: url('images/pocket.watch.cur'), auto !important;
+}
+
+#bombDefuser, #bombDefuser * 
+{
+	cursor: url('images/Bomb.cur'), auto !important;
+}
+
+#weatherMonitor, #weatherMonitor * 
+{
+	cursor: url('images/weather.ico'), auto !important;
+}
+
+
+
+#reactGallery, #reactGallery * 
+{
+cursor: url('images/cam-cursor.png'), auto !important;
+}
+
+#chatroom, #chatroom *
+{
+cursor: url('images/chat.ico'), auto !important;
+}
+
+#whiteboard, #whiteboard *
+{
+cursor: url('images/eraser.png'), auto !important;
+}
+
+img{
+	/*width: 300px;*/
+	height: 300px;
+	margin: 20px;
+	border-radius: 25px;
+	
+}
+
+p { margin-top: 20px; }
+
+#me {
+	float: left;
+}
+
+
+.navbar 
+{
+background-color: rgb(255, 255, 102);
+border-color: pink;
+border-radius: 10px;
+}
+
+.active{
+	background-color: pink;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: pink;
+}
+/*
+.navbar-default .navbar-nav > .active{
+    color: #000;
+    background: #d65c14;
+}*/
+
+.caption
+{
+	position: relative;
+	background-color: rgb(102, 255, 255);
+	
+	border-radius: 25px;
+}
+
+.thumbnail {
+
+background-color: pink;
+border-color: pink;
+border-radius: 25px;
+}
