@@ -26,7 +26,7 @@ function holidayCheck()
 {
 var skin = localStorage.getItem("holiday");
 
-$("link[type='text/css']").attr('href', skin + '.css');
+$("link[type='text/css']").attr('href', "style/" + skin + '.css');
  $('select option[value="' + skin + '"]').attr("selected",true);
 }
 
