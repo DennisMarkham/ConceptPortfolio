@@ -91,39 +91,39 @@ background-size: 50px 50px;
 /*h1 {background-color: grey;}*/
 #crystalCollector, #crystalCollector * 
 {
-	cursor: url('images/cursor2.cur'), auto !important;
+	cursor: url('../images/cursor2.cur'), auto !important;
 }
 
 #trainTimer, #trainTimer * 
 {
-	cursor: url('images/pocket.watch.cur'), auto !important;
+	cursor: url('../images/pocket.watch.cur'), auto !important;
 }
 
 #bombDefuser, #bombDefuser * 
 {
-	cursor: url('images/Bomb.cur'), auto !important;
+	cursor: url('../images/Bomb.cur'), auto !important;
 }
 
 #weatherMonitor, #weatherMonitor * 
 {
-	cursor: url('images/weather.ico'), auto !important;
+	cursor: url('../images/weather.ico'), auto !important;
 }
 
 
 
 #reactGallery, #reactGallery * 
 {
-cursor: url('images/cam-cursor.png'), auto !important;
+cursor: url('../images/cam-cursor.png'), auto !important;
 }
 
 #chatroom, #chatroom *
 {
-cursor: url('images/chat.ico'), auto !important;
+cursor: url('../images/chat.ico'), auto !important;
 }
 
 #whiteboard, #whiteboard *
 {
-cursor: url('images/eraser.png'), auto !important;
+cursor: url('../images/eraser.png'), auto !important;
 }
 
 img{
