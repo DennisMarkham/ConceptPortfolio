@@ -78,59 +78,59 @@ a:visited
 /*h1 {background-color: grey;}*/
 #crystalCollector, #crystalCollector * 
 {
-	cursor: url('images/cursor2.cur'), auto !important;
+	cursor: url('../images/cursor2.cur'), auto !important;
 }
 
 #trainTimer, #trainTimer * 
 {
-	cursor: url('images/pocket.watch.cur'), auto !important;
+	cursor: url('../images/pocket.watch.cur'), auto !important;
 }
 
 #bombDefuser, #bombDefuser * 
 {
-	cursor: url('images/Bomb.cur'), auto !important;
+	cursor: url('../images/Bomb.cur'), auto !important;
 }
 
 #weatherMonitor, #weatherMonitor * 
 {
-	cursor: url('images/weather.ico'), auto !important;
+	cursor: url('../images/weather.ico'), auto !important;
 }
 
 
 
 #reactGallery, #reactGallery * 
 {
-cursor: url('images/cam-cursor.png'), auto !important;
+cursor: url('../images/cam-cursor.png'), auto !important;
 }
 
 #chatroom, #chatroom *
 {
-cursor: url('images/chat.ico'), auto !important;
+cursor: url('../images/chat.ico'), auto !important;
 }
 
 #whiteboard, #whiteboard *
 {
-cursor: url('images/eraser.png'), auto !important;
+cursor: url('../images/eraser.png'), auto !important;
 }
 
 #madLibs, #madLibs * 
 {
-	cursor: url('images/pencil.cur'), auto !important;
+	cursor: url('../images/pencil.cur'), auto !important;
 }
 
 #roulette, #roulette * 
 {
-	cursor: url('images/dollar.ico'), auto !important;
+	cursor: url('../images/dollar.ico'), auto !important;
 }
 
 #aniGallery, #aniGallery *
 {
-	cursor: url('images/vidcam.ico'), auto !important;
+	cursor: url('../images/vidcam.ico'), auto !important;
 }
 
 #menus, #menus *
 {
-	cursor: url('images/utensils.cur'), auto !important;
+	cursor: url('../images/utensils.cur'), auto !important;
 }
 
 img{
