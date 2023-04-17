@@ -111,6 +111,11 @@ cursor: url('../images/eraser.png'), auto !important;
 	cursor: url('../images/utensils.cur'), auto !important;
 }
 
+#mole, #mole *
+{
+	cursor: url('../images/hammer.cur'), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
