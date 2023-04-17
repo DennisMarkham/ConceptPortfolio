@@ -113,7 +113,7 @@ background-size: 50px 50px;
 
 #reactGallery, #reactGallery * 
 {
-cursor: url('../images/cam-cursor.png'), auto !important;
+cursor: url(../images/cam-cursor.png'), auto !important;
 }
 
 #chatroom, #chatroom *
@@ -126,11 +126,30 @@ cursor: url('../images/chat.ico'), auto !important;
 cursor: url('../images/eraser.png'), auto !important;
 }
 
+#madLibs, #madLibs * 
+{
+	cursor: url('../images/pencil.cur'), auto !important;
+}
+
+#roulette, #roulette * 
+{
+	cursor: url('../images/dollar.ico'), auto !important;
+}
+
+#aniGallery, #aniGallery *
+{
+	cursor: url('../images/vidcam.ico'), auto !important;
+}
+
+#menus, #menus *
+{
+	cursor: url('../images/utensils.cur'), auto !important;
+}
+
 #mole, #mole *
 {
 	cursor: url('../images/hammer.cur'), auto !important;
 }
-
 img{
 	/*width: 300px;*/
 	height: 300px;
