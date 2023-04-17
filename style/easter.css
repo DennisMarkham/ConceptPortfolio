@@ -126,6 +126,11 @@ cursor: url('../images/chat.ico'), auto !important;
 cursor: url('../images/eraser.png'), auto !important;
 }
 
+#mole, #mole *
+{
+	cursor: url('../images/hammer.cur'), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
