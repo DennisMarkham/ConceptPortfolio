@@ -4,9 +4,9 @@ function showStuff() {
     $(".content").fadeIn("slow");
 }
 
-function holidayCheck()
+function skinCheck()
 {
-var skin = localStorage.getItem("holiday");
+var skin = localStorage.getItem("skin");
 if (skin == null)
 {
 	skin = "default";
@@ -16,13 +16,13 @@ $("link[type='text/css']").attr('href', "style/" + skin + '.css');
 }
 
 
-function setHoliday()
+function setSkin()
 {
   console.log(event.target.value);
 
-  localStorage.setItem("holiday", event.target.value);
+  localStorage.setItem("skin", event.target.value);
 
-  holidayCheck();
+  skinCheck();
 }
 
 function bunnyHop()
