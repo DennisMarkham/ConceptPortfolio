@@ -3,29 +3,14 @@
 function showStuff() {
     $(".content").fadeIn("slow");
 }
-//this does not have any effect until I re-enable the "display none" on my css.  But
-//this is faulty for some reason
 
-// function holidayCheck()
-// {
-// if (localStorage.getItem("holiday") == "easter")
-// {
-//   $("link[href='default.css']").attr('href','easter.css');
-//   $('select option[value="easter"]').attr("selected",true);
-// }
-// else
-// {
-//   $("link[href='easter.css']").attr('href','default.css');
-//     $('select option[value="default"]').attr("selected",true);
-// }
-// }
-
-// this streamlined version of holidayCheck breaks the program for some reason
-//
 function holidayCheck()
 {
 var skin = localStorage.getItem("holiday");
-
+if (skin == null)
+{
+	skin = "default";
+}
 $("link[type='text/css']").attr('href', "style/" + skin + '.css');
  $('select option[value="' + skin + '"]').attr("selected",true);
 }
