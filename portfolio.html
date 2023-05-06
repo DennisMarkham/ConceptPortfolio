@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang ="en-us">
 <head>
@@ -6,7 +7,7 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="default.css">
+  <link rel="stylesheet" type="text/css" href="style/default.css">
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -20,7 +21,7 @@
 
 
 
-<body onload="showStuff(), holidayCheck()">
+<body onload="showStuff(), skinCheck()">
 
 
  <nav class="navbar navbar-default">
@@ -34,7 +35,7 @@
       <li><a href="downloads.html">Downloads</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-<span class = "holiday" style = "float:right;">Holiday mode? <select onChange = "setHoliday(event);">
+<span class = "skin" style = "float:right;">Change Skin? <select onChange = "setSkin(event);">
         <option value = "default">None</option>
         <option value = "easter">Easter</option>
       <option value = "christmas">Christmas</option></select> 
@@ -43,19 +44,6 @@
 </nav>
 
 
-<!-- <div class ="container">
-<section class ="row">
-<div class ="col-sm-1">
-</div>
-<div class="col-sm-10"> 
-<a href = "https://dennismarkham.github.io/trainTime/"> <img class = "portfolio" src = "images/dummy_image.png" alt ="train simulator"><span class = "caption">Train Timer </span></img></a> 
-<a href = "https://dennismarkham.github.io/week-4-game/"><img class = "portfolio" src = "images/dummy_image.png" alt ="crystal collector"></img></a>
-<a href = "#"><img class = "portfolio" src = "images/dummy_image.png" alt ="coming soon..."></img></a>
-</div>
-<div class = "col-sm-1">
-  </div>
-</section>
-</div> -->
 <div class = "content">
 
 
@@ -82,7 +70,7 @@
         </div>
       </a>
     </div>
-<!--     <a style = "color: red" href = "crystalv1.mp4"><b>(React Version)</b></a> -->
+
   </div>
 
 <div class="col-sm-4"  onmouseover = "train()">
@@ -130,18 +118,6 @@
 
 <div class="row">
   <div class = "col-sm-2"></div>
- 
-  <div class="col-sm-4"  onmouseover="shutter()">
-    <div class="thumbnail" id = "reactGallery" data-toggle="tool-tip" title = "HTML, CSS, React, Bootstrap">
-      <a href="https://rphotogallery.herokuapp.com/">
-        <img style = "height: 250px" src="images/camera.png" alt="camera" style="width:100%">
-        <div class="caption">
-          <p>React Photo Gallery</p>
-        </div>
-      </a>
-    </div>
-  </div>
-
 
   <div class="col-sm-4" >
     <div class="thumbnail" id = "roulette" data-toggle="tool-tip" title = "HTML, CSS, Javascript, Javascript Animation, JQuery, Bootstrap">
@@ -154,13 +130,7 @@
     </div>
   </div>
 
-</div>
-
-<div class="row">
-  <div class = "col-sm-2"></div>
-  
-
-   <div class="col-sm-4" onmouseover="beep()">
+  <div class="col-sm-4" onmouseover="beep()">
     <div class="thumbnail" id = "profanity"  data-toggle = "tool-tip" title = "HTML, CSS, Javascript, JQuery, RegEx">
       <a href="https://dennismarkham.github.io/RegExProfanityFilter/">
         <img style = "height: 250px" src="images/profanity.png" alt="profanity" style="width:100%">
@@ -170,8 +140,13 @@
       </a>
     </div>
   </div>
+ <div class = "col-sm-2"></div>
+</div>
 
-  <div class="col-sm-4" onmouseover="laugh()">
+<div class="row">
+  <div class = "col-sm-2"></div>
+
+   <div class="col-sm-4" onmouseover="laugh()">
     <div class="thumbnail" id = "madLibs" data-toggle= "tool-tip" title = "HTML, CSS, Javascript, JQuery, local storage, RegEx">
       <a href="https://dennismarkham.github.io/MadLibsV2/">
         <img src="images/madLibs.png" alt="Mad Libs" style="width:100%; height: 250px;" >
@@ -181,14 +156,8 @@
       </a>
     </div>
   </div>
-  
-  <div class = "col-sm-2"></div>
-</div>
-<div class="row">
-  <div class = "col-sm-2"></div>
-  
 
-   <div class="col-sm-4">
+ <div class="col-sm-4">
     <div class="thumbnail" id = "calc" data-toggle= "tool-tip" title = "HTML, CSS, AngularJS">
       <a href="https://dennismarkham.github.io/Angular_Calc_RegUpload/">
         <img src="images/calculator.png" alt="AngularJS Calculator" style="height:250px;">
@@ -199,7 +168,12 @@
     </div>
   </div>
 
-   <div class="col-sm-4">
+   <div class = "col-sm-2"></div>
+
+ </div>
+ <div class = "row">
+   <div class = "col-sm-2"></div>
+ <div class="col-sm-4">
     <div class="thumbnail" id = "meal" data-toggle = "tool-tip" title = "ES6">
       <a href="https://dennismarkham.github.io/ES6MealMaker/">
         <img style = "height: 250px" src="images/sandwich.png" alt="menu" style="width:100%" >
@@ -209,8 +183,24 @@
       </a>
     </div>
   </div>
-  <div class = "col-sm-2"></div>
+ 
+
+<div class="col-sm-4">
+    <div class="thumbnail" id = "mole" data-toggle= "tool-tip" title = "HTML, CSS, Javascript, Jquery">
+      <a href="https://dennismarkham.github.io/whack_a_mole/">
+        <img src="images/mole.png" alt="Whack-A-Mole" style="height:250px;">
+        <div class="caption">
+          <p>Whack-a-mole!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+   
+   <div class = "col-sm-2"></div>
+
 </div>
+
+
 
 
 <div class = "row">
@@ -231,7 +221,7 @@
       <a href="https://dennismarkham.github.io/Angular_Whiteboard/">
         <img style = "height: 250px" src="images/whiteboard.png" alt="whiteboard" style="width:100%" >
         <div class="caption">
-    <p>AngularJS Whiteboard <span style = "color:red; font-style:bold;">(WIP)</span></p>
+    <p>AngularJS Whiteboard</p>
         </div>
       </a>
     </div>
@@ -244,7 +234,7 @@
       <a href="https://dennismarkham.github.io/animationGallery/">
         <img style = "height: 250px;" src="images/animationsGallery.png" alt="CSS animations gallery" style="width:100%">
         <div class="caption">
-          <p>SASS/CSS Art & Animations Gallery <span style = "color:red; font-style:bold;">(WIP)</span></p>
+          <p>SASS/CSS Art & Animations Gallery </p>
         </div>
       </a>
     </div>
@@ -262,7 +252,7 @@
       <a href="https://dennismarkham.github.io/Angular_Menus2/">
         <img style = "height: 250px" src="images/menu.png" alt="menu" style="width:100%" >
         <div class="caption">
-    <p>AngularJS menus <span style = "color:red; font-style:bold;">(WIP)</span></p>
+    <p>AngularJS menus </p>
         </div>
       </a>
     </div>
@@ -317,25 +307,22 @@ $(".thumbnail").click(function()
   localStorage.setItem(this.id, "visited");
 //set visited to true
 })
-//QUESTIONS:
-//-Train sound and magic sound
-var trainSound = new Audio("train.wav");
+
+var trainSound = new Audio("sounds/train.wav");
   trainSound.volume = 0.1;
-  var crystalSound = new Audio("crystal.wav");
+  var crystalSound = new Audio("sounds/crystal.wav");
   crystalSound.volume = 0.25;
-   var shutterSound = new Audio("shutter.wav");
-   shutterSound.volume = 0.2;
-  var thunderSound = new Audio("thunder.wav");
+  var thunderSound = new Audio("sounds/thunder.wav");
   thunderSound.volume = 0.15;
-  var boomSound = new Audio("boom.mp3");
+  var boomSound = new Audio("sounds/boom.mp3");
   boomSound.volume = 0.15;
-  var typingSound = new Audio("typing.wav");
+  var typingSound = new Audio("sounds/typing.wav");
   typingSound.volume = 0.15;
-  var wipingSound = new Audio("wiping.wav");
+  var wipingSound = new Audio("sounds/wiping.wav");
   wipingSound.volume = 0.5;
-  var beepSound = new Audio("beep.wav");
+  var beepSound = new Audio("sounds/beep.wav");
   beepSound.volume = 0.05;
-  var laughSound = new Audio("laugh.wav");
+  var laughSound = new Audio("sounds/laugh.wav");
   
   function showStuff() {
     $("#content").fadeIn("slow");
@@ -347,11 +334,7 @@ var trainSound = new Audio("train.wav");
 
   
 
-//okay, okay, the visitedArray is only passed "visited" or "null"
-//so I think what we need is parrelel array of keys.  
-//alright, let's start simple, we can dry this up later.  AND I THINK
-//TO DO THAT WE WILL HAVE TO USE THE KEYS ARRAY TO BUILD THE VISITED ARRAY!
-//YES!
+
 
 keysArray.push("crystalCollector");
 keysArray.push("trainTimer");
@@ -367,14 +350,14 @@ keysArray.push("calc");
 keysArray.push("aniGallery");
 keysArray.push("menus");
 keysArray.push("meal");
+keysArray.push("mole");
 
 for (i = 0; i < keysArray.length; i++)
 {
 visitedArray.push(localStorage.getItem(keysArray[i]));
 }
 
-//create a for loop to loop through array, maybe it logs caption text into the 
-//console?
+
 for (i = 0; i < visitedArray.length; i++) { 
    if (visitedArray[i] == "visited")
      {
@@ -383,8 +366,7 @@ for (i = 0; i < visitedArray.length; i++) {
     }
 
 }
- //okay, the above just logs visited, not the same of the variable in local storage   
- //EFF YEAH!  YOU DID IT!!
+
 }
 
 
@@ -424,7 +406,6 @@ function laugh(){
   laughSound.play();
   console.log("playing laugh");
 }
-//*********************
 
 </script>
 </body>
