@@ -6,7 +6,7 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style/default.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -20,7 +20,7 @@
 
 
 
-<body onload="showStuff(), skinCheck()">
+<body onload="showStuff(), holidayCheck()">
 
 
  <nav class="navbar navbar-default">
@@ -34,7 +34,7 @@
       <li><a href="downloads.html">Downloads</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-<span class = "skin" style = "float:right;">Change Skin? <select onChange = "setSkin(event);">
+<span class = "holiday" style = "float:right;">Holiday mode? <select onChange = "setHoliday(event);">
         <option value = "default">None</option>
         <option value = "easter">Easter</option>
       <option value = "christmas">Christmas</option></select> 
@@ -212,25 +212,6 @@
   <div class = "col-sm-2"></div>
 </div>
 
-  <div class="row">
-  <div class = "col-sm-2"></div>
-  
-
-   <div class="col-sm-4">
-    <div class="thumbnail" id = "mole" data-toggle= "tool-tip" title = "HTML, CSS, Javascript, Jquery">
-      <a href="https://dennismarkham.github.io/whack_a_mole/">
-        <img src="images/mole.png" alt="Whack-A-Mole" style="height:250px;">
-        <div class="caption">
-          <p>Whack-a-mole!</p>
-        </div>
-      </a>
-    </div>
-  </div>
-    
-    <div class = "col-sm-4"></div>
-    <div class = "col-sm-2"></div>
-    
-  </div>
 
 <div class = "row">
 <div class = "col-sm-1">
@@ -338,23 +319,23 @@ $(".thumbnail").click(function()
 })
 //QUESTIONS:
 //-Train sound and magic sound
-var trainSound = new Audio("sounds/train.wav");
+var trainSound = new Audio("train.wav");
   trainSound.volume = 0.1;
-  var crystalSound = new Audio("sounds/crystal.wav");
+  var crystalSound = new Audio("crystal.wav");
   crystalSound.volume = 0.25;
-   var shutterSound = new Audio("sounds/shutter.wav");
+   var shutterSound = new Audio("shutter.wav");
    shutterSound.volume = 0.2;
-  var thunderSound = new Audio("sounds/thunder.wav");
+  var thunderSound = new Audio("thunder.wav");
   thunderSound.volume = 0.15;
-  var boomSound = new Audio("sounds/boom.mp3");
+  var boomSound = new Audio("boom.mp3");
   boomSound.volume = 0.15;
-  var typingSound = new Audio("sounds/typing.wav");
+  var typingSound = new Audio("typing.wav");
   typingSound.volume = 0.15;
-  var wipingSound = new Audio("sounds/wiping.wav");
+  var wipingSound = new Audio("wiping.wav");
   wipingSound.volume = 0.5;
-  var beepSound = new Audio("sounds/beep.wav");
+  var beepSound = new Audio("beep.wav");
   beepSound.volume = 0.05;
-  var laughSound = new Audio("sounds/laugh.wav");
+  var laughSound = new Audio("laugh.wav");
   
   function showStuff() {
     $("#content").fadeIn("slow");
@@ -386,7 +367,6 @@ keysArray.push("calc");
 keysArray.push("aniGallery");
 keysArray.push("menus");
 keysArray.push("meal");
-keysArray.push("mole");
 
 for (i = 0; i < keysArray.length; i++)
 {
