@@ -139,6 +139,10 @@ cursor: url('../images/eraser.png'), auto !important;
 	cursor: url('../images/hammer.cur'), auto !important;
 }
 
+#alchemy, #alchemy *{
+	cursor:url("../images/alchemy.cur"), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
