@@ -146,7 +146,7 @@ box-shadow: 5px 5px 5px;
 @media only screen and (max-width: 900px) {
   .navbar {
     margin: 40px;
-    
+    padding: 10px;
   }
 }
 

@@ -47,7 +47,7 @@ bottom-margin: 5px;
 @media only screen and (max-width: 900px) {
   .navbar {
     margin: 40px;
-    
+    padding: 10px;
   }
 }
 
