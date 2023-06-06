@@ -8,10 +8,6 @@
   .col-md-8
 {
 	background-color: green;
-	border-radius: 25px;
-	padding: 20px;
-	margin-bottom: 20px;
-	box-shadow: 5px 5px 5px black;
 	color: white;
 }
 
@@ -22,9 +18,6 @@ h2
 
 input, textarea
 {
-border-radius: 10px;
-border-width: 0px;
-margin-bottom: 5px;
 color: red;
 }
 
@@ -64,140 +57,25 @@ a:visited
 
 .col-md-10 {
 	background-color: green;
-	border-radius: 25px;
-	box-shadow: 5px 5px 5px black;
 	color: white;
 }
 
-@media only screen and (max-width: 900px) {
-  .col-md-10 {
-    margin: 50px;
-    padding: 50px;
-  }
-}
-
-/*h1 {background-color: grey;}*/
-#crystalCollector, #crystalCollector * 
-{
-	cursor: url('../images/cursor2.cur'), auto !important;
-}
-
-#trainTimer, #trainTimer * 
-{
-	cursor: url('../images/pocket.watch.cur'), auto !important;
-}
-
-#bombDefuser, #bombDefuser * 
-{
-	cursor: url('../images/Bomb.cur'), auto !important;
-}
-
-#weatherMonitor, #weatherMonitor * 
-{
-	cursor: url('../images/weather.ico'), auto !important;
-}
 
 
 
-#reactGallery, #reactGallery * 
-{
-cursor: url('../images/cam-cursor.png'), auto !important;
-}
-
-#chatroom, #chatroom *
-{
-cursor: url('../images/chat.ico'), auto !important;
-}
-
-#whiteboard, #whiteboard *
-{
-cursor: url('../images/eraser.png'), auto !important;
-}
-
-#madLibs, #madLibs * 
-{
-	cursor: url('../images/pencil.cur'), auto !important;
-}
-
-#roulette, #roulette * 
-{
-	cursor: url('../images/dollar.ico'), auto !important;
-}
-
-#aniGallery, #aniGallery *
-{
-	cursor: url('../images/vidcam.ico'), auto !important;
-}
-
-#menus, #menus *
-{
-	cursor: url('../images/utensils.cur'), auto !important;
-}
-
-#mole, #mole *
-{
-	cursor: url('../images/hammer.cur'), auto !important;
-}
-
-#alchemy, #alchemy *{
-	cursor:url("../images/alchemy.cur"), auto !important;
-}
-
-img{
-	/*width: 300px;*/
-	height: 300px;
-	margin: 20px;
-	border-radius: 25px;
-	
-}
-
-p { margin-top: 20px; }
-
-#me {
-	float: left;
-}
 
 
 .navbar 
 {
 background-color: green;
-border-color: grey;
-border-radius: 10px;
-box-shadow: 5px 5px 5px black;
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar {
-    margin: 40px;
-    padding: 10px;
-  }
-}
 
-@media only screen and (max-width: 780px)
-{
-	.col-sm-4
-	{
-		margin: 10px;
-	}
 
-	.caption
-	{
-		margin: 20px;
-	}
-
-	.caption p
-	{
-		text-align: center;
-		font-size: 200%;
-	}
-}
 
 .caption
 {
-	position: relative;
 	color: white;
-	
-	border-radius: 25px;
 	background-color:hsl(0, 65%, 50%);
 }
 
@@ -210,6 +88,4 @@ box-shadow: 5px 5px 5px black;
 .thumbnail {
 
 background-color: green;
-border-radius: 25px;
-box-shadow: 5px 5px 5px black;
 }

@@ -4,25 +4,22 @@ function showStuff() {
     $(".content").fadeIn("slow");
 }
 
-function skinCheck()
-{
-var skin = localStorage.getItem("skin");
-if (skin == null)
-{
-	skin = "default";
-}
-$("link[type='text/css']").attr('href', "style/" + skin + '.css');
- $('select option[value="' + skin + '"]').attr("selected",true);
+function skinCheck() {
+    var skin = localStorage.getItem("skin");
+    if (skin == null) {
+        skin = "default";
+    }
+    $(".subStyle").attr('href', "style/" + skin + '.css');
+    $('select option[value="' + skin + '"]').attr("selected", true);
 }
 
 
-function setSkin()
-{
-  console.log(event.target.value);
+function setSkin() {
+    console.log(event.target.value);
 
-  localStorage.setItem("skin", event.target.value);
+    localStorage.setItem("skin", event.target.value);
 
-  skinCheck();
+    skinCheck();
 }
 
 function bunnyHop()
