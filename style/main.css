@@ -159,13 +159,13 @@ box-shadow: 5px 5px 5px;
 
 	.caption
 	{
-		margin: 20px;
+		margin: 20px 70px;
 	}
 
 	.caption p
 	{
 		text-align: center;
-		font-size: 200%;
+		font-size: 150%;
 	}
 }
 
