@@ -5,7 +5,7 @@
   This is removed until I can figure out why it works for index and contact but now
   downloads and portfolio*/
 
-.col-md-8
+.col-xs-8
 {
 	background-color: rgb(200, 200, 200);
 	border-radius: 25px;
@@ -40,14 +40,14 @@ body {
 background-color: rgb(0, 158, 158);
 }
 
-.col-md-10 {
+.col-xs-10 {
 	background-color: rgb(200, 200, 200);
 	border-radius: 25px;
 	box-shadow: 5px 5px 5px;
 }
 
 @media only screen and (max-width: 900px) {
-  .col-md-10 {
+  .col-xs-10 {
     margin: 50px;
     padding: 50px;
   }
@@ -183,4 +183,9 @@ background-color: rgb(200, 200, 200);
 border-color: grey;
 border-radius: 25px;
 box-shadow: 5px 5px 5px;
+}
+
+h2
+{
+
 }
