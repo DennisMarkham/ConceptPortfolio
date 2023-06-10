@@ -1,0 +1,57 @@
+/* .content {
+    display: none;
+  }
+ */
+
+ body
+ {
+  color: gray;
+ }
+img{
+  filter: grayscale();
+}
+
+body, .caption
+{
+  background-color: rgb(235, 235, 235);
+}
+
+hr
+{
+  border-color: black;
+}
+
+a
+{
+
+}
+
+b
+{
+  color:black;
+}
+
+a
+{
+  color: black;
+}
+
+a:hover
+{
+  color:black;
+}
+
+a:visited
+{
+  color: rgb(235, 235, 235);
+}
+
+.thumbnail:hover
+{
+  border-color: black;
+}
+
+body
+{
+  cursor: auto !important;
+}
