@@ -9,9 +9,28 @@
 
 
 
-#bunny
+/* BUNNY STUFF */
+/*the bunny should look like its jumping from the bottom of the page, or at least
+it would if not for that annoying scrollbar */
+@keyframes bunnyHop
 {
+
+  0% {top: 20px;}
+  50% {top: -100px;}
+  100% {top: 20px;}
+}
+
+#bunny{
 	display: inline;
+	height: 100px;
+    position: relative;
+	animation-name: bunnyHop;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;	
+}
+
+#bunnyRow{
+height:100px;
 }
 
  .thumbnail:hover {
@@ -27,7 +46,14 @@
 	display:none;
 }
 
+#bunnyRow
+{
+	height: 0px;
  }
+}
+/******/
+
+
 
 body {
 background-color: rgb(102, 255, 255);

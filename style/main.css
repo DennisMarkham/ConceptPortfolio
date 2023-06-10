@@ -27,14 +27,17 @@ margin-bottom: 5px;
     border-color:#E67F18;
   }
 
-#bunny{
-	display: none;
-	width: 10%;
-	height: 10%;
-	position: absolute;
-	bottom: 0px;
-	
+#bunny
+{
+	display:none;
 }
+
+#bunnyRow
+{
+   height: 0px;
+}
+
+
 
 body {
 background-color: rgb(0, 158, 158);
