@@ -39,8 +39,6 @@
   }
 
 
-  /*Why isn't google developer tools responding to the change I made?*/
-  /*Okay, evidently I've got a lot to learn about responsive design.*/
 }
 </style>
 
@@ -110,22 +108,19 @@ var count = 1;
 
  function startSlideshow() {
 console.log("start slideshow firing")
-  // TODO: Use showImage to hold the setInterval to run nextImage.
+
   showImage = setInterval(nextImage, 3000);
 
 }
 
 function nextImage() {
-  //  TODO: Increment the count by 1.
+ 
   count++;
 
-  // TODO: Show the loading gif in the "image-holder" div.
+  
   $("#me").attr("src", "images/me" + count + ".jpg");
 
-  // TODO: Use a setTimeout to run displayImage after 1 second.
-  //setTimeout(displayImage, 1000);
-
-  // TODO: If the count is the same as the length of the image array, reset the count to 0.
+ 
   if (count === images.length) {
     count = 0;
   }
@@ -161,6 +156,6 @@ else
 }
 
 
-//*****************</script>
+</script>
 </body>
 </html>
