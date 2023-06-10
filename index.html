@@ -140,10 +140,9 @@ function dateNTime()
 //$("#age").text(parseFloat(moment("19900312", "YYYYMMDD").fromNow()));
   //currently bugged
 
-var hours = parseFloat(moment().startOf('day').fromNow());
-// var hours = moment('HH');
-console.log(hours);
-console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+var hours = moment().hour();
+
+console.log(hours)
 
 if (hours >= 17 || hours < 5 || hours == NaN)
 {
