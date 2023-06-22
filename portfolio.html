@@ -178,7 +178,7 @@
  </div>
  <div class = "row">
    <div class = "col-sm-2"></div>
- <div class="col-sm-4">
+ <div class="col-sm-4" onmouseover="eating()">
     <div class="thumbnail" id = "meal" data-toggle = "tool-tip" title = "ES6">
       <a href="https://dennismarkham.github.io/ES6MealMaker/">
         <img style = "height: 250px" src="images/sandwich.png" alt="sandwich" style="width:100%" >
@@ -207,7 +207,7 @@
 
 <div class = "row">
    <div class = "col-sm-2"></div>
- <div class="col-sm-4">
+ <div class="col-sm-4" onmouseover="bubbles()">
     <div class="thumbnail" id = "alchemy" data-toggle = "tool-tip" title = "Javascript, Jquery">
       <a href="https://dennismarkham.github.io/Elder_Scrolls_Alchemy/">
         <img style = "height: 250px" src="images/potion.png" alt="potion" style="width:100%" >
@@ -251,21 +251,24 @@ $(".thumbnail").click(function()
 //set visited to true
 })
 
-var trainSound = new Audio("sounds/train.wav");
+  const trainSound = new Audio("sounds/train.wav");
   trainSound.volume = 0.1;
-  var crystalSound = new Audio("sounds/crystal.wav");
+  const crystalSound = new Audio("sounds/crystal.wav");
   crystalSound.volume = 0.25;
-  var thunderSound = new Audio("sounds/thunder.wav");
+  const thunderSound = new Audio("sounds/thunder.wav");
   thunderSound.volume = 0.15;
-  var boomSound = new Audio("sounds/boom.mp3");
+  const boomSound = new Audio("sounds/boom.mp3");
   boomSound.volume = 0.15;
-  var typingSound = new Audio("sounds/typing.wav");
+  const typingSound = new Audio("sounds/typing.wav");
   typingSound.volume = 0.15;
-  var wipingSound = new Audio("sounds/wiping.wav");
+  const wipingSound = new Audio("sounds/wiping.wav");
   wipingSound.volume = 0.5;
-  var beepSound = new Audio("sounds/beep.wav");
+  const beepSound = new Audio("sounds/beep.wav");
   beepSound.volume = 0.05;
-  var laughSound = new Audio("sounds/laugh.wav");
+  const laughSound = new Audio("sounds/laugh.wav");
+  const bites = new Audio("sounds/eating.wav");
+  const bubbling = new Audio("sounds/bubbles.wav");
+  bubbling.volume = 0.25
   
   function showStuff() {
     $("#content").fadeIn("slow");
@@ -342,6 +345,14 @@ function beep(){
 function laugh(){
   laughSound.play();
   console.log("playing laugh");
+}
+function bubbles()
+{
+  bubbling.play();
+}
+function eating()
+{
+  bites.play();
 }
 
 </script>
