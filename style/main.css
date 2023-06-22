@@ -130,6 +130,10 @@ cursor: url('../images/eraser.png'), auto !important;
 	cursor:url("../images/alchemy.cur"), auto !important;
 }
 
+#aniGallery, #aniGallery *{
+	cursor:url("../images/paintbrush.cur"), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
