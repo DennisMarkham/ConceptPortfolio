@@ -1,0 +1,30 @@
+
+
+body {
+background-color: grayscale(rgb(0, 158, 158));
+}
+
+.caption{
+background-color: grayscale(rgb(0, 158, 158));
+}
+
+a
+{
+	color:hsl(0, 0%, 95%);
+}
+
+a:hover
+{
+	color: black
+}
+
+a:visited
+{
+	color:black;
+	text-decoration: underline;
+}
+
+img
+{
+	filter: grayscale(1);
+}

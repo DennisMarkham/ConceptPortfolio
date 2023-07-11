@@ -1,57 +1,26 @@
-/* .content {
-    display: none;
-  }
- */
-
- body
- {
-  color: gray;
- }
-img{
-  filter: grayscale();
+body {
+  background-color: #4f4f4f;
 }
 
-body, .caption
-{
-  background-color: rgb(235, 235, 235);
+.caption {
+  background-color: #4f4f4f;
 }
 
-hr
-{
-  border-color: black;
+a {
+  color: #f2f2f2;
 }
 
-a
-{
-
-}
-
-b
-{
-  color:black;
-}
-
-a
-{
+a:hover {
   color: black;
 }
 
-a:hover
-{
-  color:black;
+a:visited {
+  color: black;
+  text-decoration: underline;
 }
 
-a:visited
-{
-  color: rgb(235, 235, 235);
+img {
+  filter: grayscale(1);
 }
 
-.thumbnail:hover
-{
-  border-color: black;
-}
-
-body
-{
-  cursor: auto !important;
-}
+/*# sourceMappingURL=vintage.css.map */
