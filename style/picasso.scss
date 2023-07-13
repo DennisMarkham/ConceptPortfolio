@@ -1,6 +1,58 @@
-$origBG: rgb(0, 158, 158);
+$origTeal: hsl(0, 60%, 40%);
+$origGray: complement($origTeal);
+$orange: hsl(30, 60%, 50%);
+$burntOrange: hsl(30, 40%, 40%);
+$peaGreen: hsl(90, 60%, 40%);
 
-.col-xs-8
+body
 {
-	background-color: complement($origBG);
-	}
+	background-color: $origTeal;
+	color: $origTeal
+}
+
+.caption
+{
+	background-color: $peaGreen;
+}
+
+p
+{
+color: $origTeal;	
+}
+
+.col-md-10{
+background-color: $origGray
+}
+
+.col-xs-10 {
+	background-color: $origGray;
+}
+
+.thumbnail{
+	background-color: $orange;
+}
+
+.thumbnail:hover {
+    border-color:$peaGreen;
+  }
+
+.navbar 
+{
+background-color: $origGray;
+}
+
+a
+{
+	color: $orange;
+	font-weight: bold;
+}
+
+a:hover
+{
+	color: $burntOrange;
+}
+
+a:visited
+{
+	color: $burntOrange;
+}

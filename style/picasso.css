@@ -1,0 +1,47 @@
+body {
+  background-color: #a32929;
+  color: #a32929;
+}
+
+.caption {
+  background-color: #66a329;
+}
+
+p {
+  color: #a32929;
+}
+
+.col-md-10 {
+  background-color: #29a3a3;
+}
+
+.col-xs-10 {
+  background-color: #29a3a3;
+}
+
+.thumbnail {
+  background-color: #cc8033;
+}
+
+.thumbnail:hover {
+  border-color: #66a329;
+}
+
+.navbar {
+  background-color: #29a3a3;
+}
+
+a {
+  color: #cc8033;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #8f663d;
+}
+
+a:visited {
+  color: #8f663d;
+}
+
+/*# sourceMappingURL=picasso.css.map */
