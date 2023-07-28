@@ -91,10 +91,7 @@ background-color: rgb(200, 200, 200);
 cursor: url(../cursors/cam-cursor.png'), auto !important;
 }
 
-#chatroom, #chatroom *
-{
-cursor: url('../cursors/chat.ico'), auto !important;
-}
+
 
 #whiteboard, #whiteboard *
 {
@@ -111,10 +108,7 @@ cursor: url('../cursors/eraser.png'), auto !important;
 	cursor: url('../cursors/dollar.ico'), auto !important;
 }
 
-#aniGallery, #aniGallery *
-{
-	cursor: url('../cursors/vidcam.ico'), auto !important;
-}
+
 
 #menus, #menus *
 {
