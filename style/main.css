@@ -103,10 +103,7 @@ cursor: url('../cursors/eraser.png'), auto !important;
 	cursor: url('../cursors/pencil.cur'), auto !important;
 }
 
-#roulette, #roulette * 
-{
-	cursor: url('../cursors/dollar.ico'), auto !important;
-}
+
 
 
 
@@ -124,9 +121,7 @@ cursor: url('../cursors/eraser.png'), auto !important;
 	cursor:url("../cursors/alchemy.cur"), auto !important;
 }
 
-#aniGallery, #aniGallery *{
-	cursor:url("../cursors/paintbrush.cur"), auto !important;
-}
+
 
 img{
 	/*width: 300px;*/
