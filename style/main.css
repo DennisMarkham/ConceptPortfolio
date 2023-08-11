@@ -125,6 +125,10 @@ cursor: url('../cursors/eraser.png'), auto !important;
 	cursor:url("../cursors/utensils.cur"), auto !important;
 }
 
+#profanity, #profanity *{
+	cursor:url("../cursors/chat.ico"), auto !important;
+}
+
 img{
 	/*width: 300px;*/
 	height: 300px;
