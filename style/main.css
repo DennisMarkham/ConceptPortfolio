@@ -121,7 +121,9 @@ cursor: url('../cursors/eraser.png'), auto !important;
 	cursor:url("../cursors/alchemy.cur"), auto !important;
 }
 
-
+#diner, #diner *{
+	cursor:url("../cursors/utensils.cur"), auto !important;
+}
 
 img{
 	/*width: 300px;*/
