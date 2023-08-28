@@ -5,6 +5,8 @@
   This is removed until I can figure out why it works for index and contact but now
   downloads and portfolio*/
 
+  /* now why on Earth can't I seem to change the color of the navbar links?  They're always red */
+
   .col-md-8, .col-xs-8
 {
 	background-color: green;
