@@ -88,14 +88,14 @@ background-color: rgb(200, 200, 200);
 
 
 
-#calc, #calc
+#calc, #calc *
 {
 	cursor: url('../cursors/pi.cur'), auto !important;
 }
 
-#mathQuiz, #mathQuiz
+#mathQuiz, #mathQuiz *
 {
-	cursor: url('../cursors/question.cur'), auto !important;
+	cursor: url('../cursors/question.ico'), auto !important;
 }
 
 
